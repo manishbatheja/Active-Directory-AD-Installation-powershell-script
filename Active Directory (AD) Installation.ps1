@@ -3,13 +3,13 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 #Declare variables
 $DatabasePath = "c:\windows\NTDS"
 $DomainMode = "WinThreshold"
-$DomainName = "icertis.com"
+$DomainName = "<Your-Domain-Name>"
 $DomaninNetBIOSName = "ICM"
 $ForestMode = "WinThreshold"
 $LogPath = "c:\windows\NTDS"
 $SysVolPath = "c:\windows\SYSVOL"
 $featureLogPath = "c:\windows\featurelog.txt" 
-$Password = "qDkpNtXhN(aZusthRCAj=b&X3(xSoS5A"
+$Password = "<Your Safe Mode Password Please ensure it matches the Password complexity>"
 $SecureString = ConvertTo-SecureString $Password -AsPlainText -Force
 
 #Install AD DS, DNS and GPMC 
