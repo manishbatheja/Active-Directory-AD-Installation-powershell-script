@@ -3,8 +3,10 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 #Declare variables
 $DatabasePath = "c:\windows\NTDS"
 $DomainMode = "WinThreshold"
+#$DomainName = "centos.com"
 $DomainName = "<Your-Domain-Name>"
-$DomaninNetBIOSName = "ICM"
+#NetBIOS names are also registered for groups of computers that provide network services. For example, if centos.com is a domain controller, it will register that NetBIOS name (CENTOS) and will register names that identify its role as a domain controller in the CENTOS domain at the same time. This allows clients to search for all NetBIOS hosts that provide domain controller services in the CENTOS domain without the client knowing the actual names of the domain controllers. 
+$DomaninNetBIOSName = "<YOUR NetBIOSName>"
 $ForestMode = "WinThreshold"
 $LogPath = "c:\windows\NTDS"
 $SysVolPath = "c:\windows\SYSVOL"
