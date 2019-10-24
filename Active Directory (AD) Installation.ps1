@@ -11,7 +11,7 @@ $ForestMode = "WinThreshold"
 $LogPath = "c:\windows\NTDS"
 $SysVolPath = "c:\windows\SYSVOL"
 $featureLogPath = "c:\windows\featurelog.txt" 
-$Password = "<Your Safe Mode Password Please ensure it matches the Password complexity>"
+$Password = "<Your Safe Mode Password Please ensure it matches the Windows server Password complexity>"
 $SecureString = ConvertTo-SecureString $Password -AsPlainText -Force
 
 #Install AD DS, DNS and GPMC 
